@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ooredoo Recharge - Mint Gateway Payments</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --ooredoo-red: #ed1c24; --dark: #1a1a1a; --white: #ffffff; --bg: #f8f9fa; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; background-color: var(--bg); color: var(--dark); line-height: 1.6; }
+        
+        header {
+            background-color: var(--white);
+            padding: 15px 5%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .menu-icon { font-size: 24px; margin-left: 20px; color: var(--dark); cursor: pointer; }
+        .brand-container { display: flex; flex-direction: column; line-height: 1.1; }
+        .brand-name { font-size: 28px; font-weight: 900; color: var(--ooredoo-red); text-transform: uppercase; }
+        .advertiser-name { font-size: 9px; color: #777; font-weight: 600; text-transform: uppercase; }
+
+        .hero { background: var(--ooredoo-red); color: white; padding: 60px 20px; text-align: center; }
+        .hero h1 { font-size: 32px; margin: 0; }
+
+        .action-container { max-width: 480px; margin: -40px auto 40px; background: white; padding: 40px 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; }
+        .btn-stack { display: flex; flex-direction: column; gap: 15px; }
+        .btn-action { padding: 20px; border-radius: 12px; font-size: 22px; font-weight: bold; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 12px; transition: 0.3s; }
+        .btn-ooredoo { background-color: var(--ooredoo-red); color: white; }
+        .btn-quick { background-color: #333; color: white; }
+        .btn-action:hover { transform: translateY(-3px); filter: brightness(1.1); }
+
+        .faq-section { max-width: 850px; margin: 60px auto; padding: 0 20px; }
+        .faq-section h3 { text-align: center; color: var(--dark); margin-bottom: 40px; font-size: 28px; position: relative; }
+        .faq-section h3::after { content: ''; display: block; width: 50px; height: 3px; background: var(--ooredoo-red); margin: 10px auto; }
+        .faq-item { background: white; margin-bottom: 15px; border-radius: 10px; border: 1px solid #eee; overflow: hidden; }
+        .faq-question { padding: 20px; font-weight: 700; cursor: pointer; display: flex; justify-content: space-between; background: #fff; font-size: 17px; }
+        .faq-answer { padding: 0 20px 20px; color: #555; font-size: 15px; border-top: 1px solid #f9f9f9; }
+
+        footer { background-color: #111; color: #fff; padding: 70px 8% 30px; text-align: right; font-size: 14px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; }
+        .footer-col h4 { border-bottom: 2px solid var(--ooredoo-red); display: inline-block; padding-bottom: 5px; margin-bottom: 25px; font-size: 18px; }
+        .footer-col a { color: #aaa; text-decoration: none; display: block; margin-bottom: 15px; transition: 0.3s; }
+        .footer-col a:hover { color: var(--ooredoo-red); padding-right: 5px; }
+        .footer-bottom { border-top: 1px solid #222; margin-top: 50px; padding-top: 30px; text-align: center; color: #666; font-size: 12px; line-height: 2; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="menu-icon"><i class="fas fa-bars"></i></div>
+    <div class="brand-container">
+        <span class="brand-name">Ooredoo</span>
+        <span class="advertiser-name">Mint Gateway for Electronic Payment Services L.L.C</span>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>بوابة شحن رصيد Ooredoo المعتمدة</h1>
+    <p>نظام الدفع والتحصيل الإلكتروني لخدمات الاتصالات - الكويت</p>
+</section>
+
+<div class="action-container">
+    <div class="btn-stack">
+        <a href="recharge.php" class="btn-action btn-ooredoo">
+            <i class="fas fa-mobile-alt"></i> إعادة شحن Ooredoo
+        </a>
+        <a href="quick-pay.php" class="btn-action btn-quick">
+            <i class="fas fa-bolt"></i> الدفع السريع
+        </a>
+    </div>
+</div>
+
+<div class="faq-section">
+    <h3>الأسئلة الشائعة حول خدمات الشحن</h3>
+    
+    <div class="faq-item">
+        <div class="faq-question">1. ما هي طبيعة الخدمات المقدمة عبر بوابة مينت؟</div>
+        <div class="faq-answer">بوابة مينت هي منصة رسمية مرخصة لممارسة نشاط تجارة البطاقات الإلكترونية وخدمات تحصيل الرسوم والدفعيات. نحن نوفر نظاماً تقنياً متكاملاً يتيح للمستخدمين إعادة شحن أرصدة الاتصالات لشبكة Ooredoo الكويت وسداد الفواتير عبر قنوات دفع آمنة ومعتمدة قانوناً.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">2. هل يتوافق هذا النشاط مع القوانين التجارية؟</div>
+        <div class="faq-answer">نعم، الشركة مرخصة من دائرة الاقتصاد والسياحة في دبي تحت رقم رخصة (741161)، وتمتلك الصلاحية القانونية لممارسة أنشطة "تجارة البطاقات الإلكترونية" و"خدمات تحصيل الرسوم"، مما يمنحنا الحق الرسمي في تقديم هذه الخدمات وتوثيقها مالياً وضريبياً.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">3. كيف يتم ضمان وصول الرصيد إلى رقم الهاتف الصحيح؟</div>
+        <div class="faq-answer">بمجرد إدخال رقم الهاتف واختيار القيمة، يقوم نظامنا بالتحقق من صحة الرقم برمجياً، ثم يتم تنفيذ عملية الشحن فور تأكيد التحصيل المالي بنجاح. يتم إرسال الرصيد بشكل آلي ومباشر لضمان السرعة والدقة.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">4. ما هي وسائل الدفع المعتمدة في البوابة؟</div>
+        <div class="faq-answer">نحن نستخدم بوابة دفع مشفرة تدعم كافة البطاقات المصرفية الصادرة عن البنوك المحلية والدولية، بما في ذلك بطاقات الـ K-Net، الفيزا كارد، والماستر كارد، مع الالتزام الكامل بمعايير أمن المعلومات العالمية.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">5. هل توجد رسوم إضافية مخفية عند الشحن؟</div>
+        <div class="faq-answer">بناءً على مبدأ الشفافية الذي تتبعه "بوابة مينت"، يتم عرض القيمة الإجمالية للعملية بوضوح قبل الضغط على زر الدفع. القيمة تشمل ثمن الرصيد وأي رسوم تحصيل بنكية إن وجدت دون أي مبالغ إضافية غير معلنة.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">6. ماذا أفعل في حال حدوث خطأ أثناء عملية الدفع؟</div>
+        <div class="faq-answer">في حال واجهتك أي مشكلة تقنية أو فشل في عملية التحصيل، يقوم النظام بإصدار تنبيه فوري. يمكنك التواصل مع الدعم الفني للشركة في دبي، وتزويدنا برقم الرخصة الموحدة (741161) لمتابعة حالة المعاملة مالياً.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">7. هل يمكنني شحن خطوط الدفع الآجل (الفواتير)؟</div>
+        <div class="faq-answer">نعم، تتيح البوابة خدمة سداد المستحقات المالية لخطوط الدفع الآجل (Postpaid) التابعة لشركة Ooredoo، بالإضافة إلى الخدمة الأساسية وهي إعادة شحن الخطوط مسبقة الدفع.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">8. كيف يتم توثيق المعاملات المالية؟</div>
+        <div class="faq-answer">بصفتنا كياناً تجارياً رسمياً، يصدر النظام إيصالاً رقمياً فورياً يحتوي على رقم المعاملة، تفاصيل التحصيل، وبيانات الشركة (بوابة مينت)، وهو ما يعد مستنداً رسمياً يثبت حق المستخدم في الخدمة.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">9. هل الخدمة متوفرة على مدار الساعة؟</div>
+        <div class="faq-answer">نظام التحصيل الإلكتروني وتجارة البطاقات لدينا يعمل بشكل آلي بالكامل (24/7)، مما يسمح للمستخدمين بتنفيذ عمليات الشحن في أي وقت ومن أي مكان دون الحاجة لتدخل بشري.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">10. ما هي الضمانات التي يقدمها الموقع للمستخدم؟</div>
+        <div class="faq-answer">نحن نضمن تنفيذ الطلبات وفقاً للأنشطة المعتمدة في رخصتنا التجارية. في حال عدم وصول الخدمة لأسباب تقنية، تلتزم الشركة بإعادة معالجة الطلب أو اتخاذ الإجراءات اللازمة لضمان حقوق العميل المالية وفقاً لقوانين حماية المستهلك في دولة الإمارات.</div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <h4>بيانات التسجيل التجاري</h4>
+            <p><strong>بوابة مينت لخدمات الدفع الالكتروني ذ.م.م - فرع دبي</strong></p>
+            <p>رقم الرخصة الموحدة: 741161</p>
+            <p>سلطة الإصدار: دائرة الاقتصاد والسياحة - دبي</p>
+        </div>
+        <div class="footer-col">
+            <h4>مركز الدعم القانوني</h4>
+            <a href="privacy.html"><i class="fas fa-shield-alt"></i> سياسة معالجة البيانات</a>
+            <a href="terms.html"><i class="fas fa-file-contract"></i> شروط الخدمة</a>
+            <a href="disclaimer.html"><i class="fas fa-exclamation-triangle"></i> إقرار المسؤولية القانونية</a>
+        </div>
+        <div class="footer-col">
+            <h4>المقر الرسمي</h4>
+            <p>مكتب رقم B102، مبنى بزنس سنتر بي</p>
+            <p>البرشا جنوب 4، دبي، الإمارات العربية المتحدة</p>
+            <p>صندوق بريد: 114056</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>الأنشطة المعتمدة: تجارة البطاقات الإلكترونية - خدمات تحصيل الرسوم والدفعيات - خدمات شراء المستندات التجارية والإئتمانية</p>
+        <p>جميع الحقوق محفوظة &copy; 2026 لبوابة مينت لخدمات الدفع الالكتروني ذ.م.م.</p>
+    </div>
+</footer>
+
+</body>
+</html>
