@@ -2,7 +2,7 @@
 nixPkgs = ['php82', 'apache']
 
 [phases.build]
-cmds = ['echo "Build complete"']
+cmds = ['echo "Build Complete"']
 
 [start]
 cmd = 'apachectl -D FOREGROUND'
