@@ -1,5 +1,3 @@
-<?php
-$data = '
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -7,92 +5,132 @@ $data = '
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag(\'js\', new Date());
-      gtag(\'config\', \'AW-18099717222\');
+      gtag('js', new Date());
+      gtag('config', 'AW-18099717222');
     </script>
     <script>
       function gtag_report_conversion(url) {
         var callback = function () {
-          if (typeof(url) != \'undefined\') {
+          if (typeof(url) != 'undefined') {
             window.location = url;
           }
         };
-        gtag(\'event\', \'conversion\', {
-            \'send_to\': \'AW-18099717222/dizXCK6Lip4cEOaIz7ZD\',
-            \'value\': 1.0,
-            \'currency\': \'EGP\',
-            \'event_callback\': callback
+        gtag('event', 'conversion', {
+            'send_to': 'AW-18099717222/dizXCK6Lip4cEOaIz7ZD',
+            'value': 1.0,
+            'currency': 'EGP',
+            'event_callback': callback
         });
         return false;
       }
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>بوابة مينت لخدمات الدفع الإلكتروني</title>
+    <title>MINT GATEWAY - بوابة مينت للدفع الإلكتروني</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root { --bg-white: #ffffff; --text-black: #1a1a1a; --soft-gray: #f4f4f4; }
-        body { font-family: "Segoe UI", Tahoma, sans-serif; margin: 0; background-color: var(--bg-white); color: var(--text-black); line-height: 1.6; direction: rtl; }
-        header { background: #ffffff; padding: 25px 5%; border-bottom: 1px solid #eee; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.02); }
-        .company-title { font-size: 18px; font-weight: 700; color: #222; }
+        :root { --primary-white: #ffffff; --text-dark: #1a1a1a; --border-light: #eeeeee; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; background-color: var(--primary-white); color: var(--text-dark); line-height: 1.6; direction: rtl; }
+        
+        header { background: #ffffff; padding: 25px 5%; border-bottom: 1px solid var(--border-light); text-align: center; }
+        .company-header-en { font-size: 22px; font-weight: 900; color: #000; letter-spacing: 1px; text-transform: uppercase; }
+        .company-header-ar { font-size: 14px; color: #666; display: block; margin-top: 5px; }
+
         .hero-section { background: #ffffff; padding: 60px 20px; text-align: center; }
-        .hero-section h1 { font-size: 2rem; margin-bottom: 10px; }
-        .hero-section p { color: #666; font-size: 1.1rem; }
-        .container-buttons { max-width: 450px; margin: 0 auto 50px; background: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); text-align: center; border: 1px solid #f0f0f0; }
-        .btn-group { display: flex; flex-direction: column; gap: 15px; }
-        .action-btn { padding: 18px; border-radius: 8px; font-size: 19px; font-weight: 700; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 10px; transition: 0.2s; cursor: pointer; border: 1px solid #ddd; width: 100%; font-family: inherit; }
+        .hero-section h1 { font-size: 2rem; margin-bottom: 10px; color: #111; }
+        .hero-section p { color: #555; font-size: 1.1rem; }
+
+        .btn-container { max-width: 480px; margin: 0 auto 50px; background: #ffffff; padding: 40px 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center; border: 1px solid #f5f5f5; }
+        .btn-stack { display: flex; flex-direction: column; gap: 20px; }
+        
+        .action-btn { padding: 20px; border-radius: 12px; font-size: 22px; font-weight: 800; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 12px; transition: 0.3s; cursor: pointer; border: 1px solid #ddd; width: 100%; font-family: inherit; }
         .btn-white { background-color: #ffffff; color: #333; }
-        .btn-black { background-color: #222; color: #ffffff; border: none; }
-        .info-note { background: #fafafa; padding: 15px; border-radius: 6px; font-size: 13px; color: #888; margin-top: 20px; border: 1px solid #eee; }
-        .faq-box { max-width: 800px; margin: 40px auto; padding: 0 20px; }
-        .faq-card { background: #fff; margin-bottom: 10px; border: 1px solid #eee; border-radius: 6px; }
-        .faq-h { padding: 15px; font-weight: 700; cursor: pointer; color: #333; }
-        .faq-b { padding: 0 15px 15px; color: #666; font-size: 14px; }
-        footer { background-color: #0c0c0c; color: #ccc; padding: 60px 8% 30px; text-align: right; }
-        .f-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px; }
-        .f-row h4 { color: #fff; margin-bottom: 15px; font-size: 16px; }
-        .f-row p { font-size: 13px; margin: 5px 0; }
-        .f-row a { color: #888; text-decoration: none; font-size: 13px; display: block; margin-bottom: 8px; }
-        .f-copy { border-top: 1px solid #1a1a1a; margin-top: 40px; padding-top: 20px; text-align: center; font-size: 12px; color: #444; }
+        .btn-dark { background-color: #111; color: #ffffff; border: none; }
+        .btn-white:hover { background-color: #f9f9f9; }
+
+        .disclaimer-text { background: #fafafa; padding: 15px; border-radius: 8px; font-size: 13px; color: #777; margin-top: 25px; border: 1px dashed #ddd; }
+
+        .faq-wrap { max-width: 850px; margin: 50px auto; padding: 0 20px; }
+        .faq-item { background: #fff; margin-bottom: 15px; border: 1px solid #eee; border-radius: 10px; overflow: hidden; }
+        .faq-title { padding: 20px; font-weight: 700; cursor: pointer; background: #fff; border-bottom: 1px solid #f9f9f9; color: #333; }
+        .faq-content { padding: 20px; color: #666; font-size: 15px; text-align: justify; }
+
+        footer { background-color: #0c0c0c; color: #fff; padding: 70px 8% 40px; text-align: right; }
+        .f-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; }
+        .f-col h4 { color: #fff; font-size: 18px; margin-bottom: 25px; border-right: 4px solid #333; padding-right: 15px; }
+        .f-col p { margin: 10px 0; color: #bbb; font-size: 14px; }
+        .f-col a { color: #888; text-decoration: none; display: block; margin-bottom: 12px; font-size: 14px; }
+        .f-col a:hover { color: #fff; }
+        .f-bottom { border-top: 1px solid #1a1a1a; margin-top: 50px; padding-top: 30px; text-align: center; color: #555; font-size: 13px; }
     </style>
 </head>
 <body>
-<header><div class="company-title">بوابة مينت لخدمات الدفع الالكتروني ذ.م.م - فرع دبي</div></header>
-<section class="hero-section"><h1>حلول الدفع الإلكتروني المتقدمة</h1><p>نظام دفع آمن وسريع لكافة العمليات المالية الرقمية وتحصيل الرسوم.</p></section>
-<div class="container-buttons">
-    <div class="btn-group">
-        <button onclick="return gtag_report_conversion(\'recharge.php\');" class="action-btn btn-white"><i class="fas fa-mobile-alt"></i> إعادة شحن الرصيد</button>
-        <button onclick="return gtag_report_conversion(\'quick-pay.php\');" class="action-btn btn-black"><i class="fas fa-bolt"></i> الدفع السريع المباشر</button>
-    </div>
-    <div class="info-note">نحن منصة دفع وسيطة مرخصة تجارياً لتوفير خدمات التحصيل المالي.</div>
-</div>
-<div class="faq-box">
-    <div class="faq-card">
-        <div class="faq-h">هل الخدمة معتمدة؟</div>
-        <div class="faq-b">نعم، بوابة مينت مرخصة رسمياً برقم 741161 وتعمل وفق معايير دائرة الاقتصاد والسياحة في دبي.</div>
-    </div>
-</div>
-<footer>
-    <div class="f-row">
-        <div class="f-col">
-            <h4>بيانات الترخيص</h4>
-            <p><strong>بوابة مينت لخدمات الدفع الالكتروني ذ.م.م</strong></p>
-            <p>رقم الرخصة الموحدة: 741161</p>
-            <p>سلطة الإصدار: دبي - الإمارات</p>
-        </div>
-        <div class="f-col">
-            <h4>العنوان الرسمي</h4>
-            <p>البرشا جنوب 4، مبنى بزنس سنتر بي، مكتب B102</p>
-        </div>
-        <div class="f-col">
-            <h4>روابط قانونية</h4>
-            <a href="privacy.html">سياسة الخصوصية</a>
-            <a href="terms.html">شروط الاستخدام</a>
-        </div>
-    </div>
-    <div class="f-copy"><p>جميع الحقوق محفوظة &copy; 2026 لبوابة مينت لخدمات الدفع الالكتروني.</p></div>
-</footer>
-</body>
-</html>';
 
-echo '<html><head><meta charset="UTF-8"></head><body><script>document.open();document.write(atob("'.base64_encode($data).'"));document.close();</script></body></html>';
+<header>
+    <div class="company-header-en">MINT GATEWAY FOR ELECTRONIC PAYMENT</div>
+    <span class="company-header-ar">بوابة مينت لخدمات الدفع الالكتروني ذ.م.م - فرع دبي</span>
+</header>
+
+<section class="hero-section">
+    <h1>حلول الدفع والتحصيل الرقمي</h1>
+    <p>بوابة دفع آمنة ومعتمدة لتنفيذ المعاملات المالية وتحصيل الرسوم.</p>
+</section>
+
+<div class="btn-container">
+    <div class="btn-stack">
+        <button onclick="return gtag_report_conversion('recharge.php');" class="action-btn btn-white">
+            <i class="fas fa-mobile-alt"></i> إعادة شحن الرصيد
+        </button>
+        <button onclick="return gtag_report_conversion('quick-pay.php');" class="action-btn btn-dark">
+            <i class="fas fa-bolt"></i> الدفع السريع المباشر
+        </button>
+    </div>
+    <div class="disclaimer-text">
+        نحن بوابة دفع وسيطة مرخصة لتقديم خدمات التحصيل المالي وتجارة البطاقات الإلكترونية.
+    </div>
+</div>
+
+<div class="faq-wrap">
+    <h3>الأسئلة الشائعة</h3>
+    <div class="faq-item">
+        <div class="faq-title">1. ما هي الخدمات التي توفرها بوابة مينت؟</div>
+        <div class="faq-content">نقدم خدمات تحصيل الرسوم والدفعيات وتجارة البطاقات الإلكترونية بموجب الرخصة رقم 741161 الصادرة من دبي.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-title">2. هل النظام آمن للاستخدام؟</div>
+        <div class="faq-content">نعم، تعتمد البوابة بروتوكولات حماية متطورة وتشفير كامل للبيانات لضمان أمان كافة العمليات المالية.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-title">3. كيف يمكنني استلام الرصيد بعد الدفع؟</div>
+        <div class="faq-content">يتم معالجة الطلبات آلياً وتحديث الرصيد فور نجاح عملية الدفع عبر البوابة المشفرة.</div>
+    </div>
+    </div>
+
+<footer>
+    <div class="f-grid">
+        <div class="f-col">
+            <h4>الترخيص التجاري</h4>
+            <p><strong>الاسم:</strong> بوابة مينت لخدمات الدفع الالكتروني</p>
+            <p><strong>رقم الرخصة:</strong> 741161</p>
+            <p><strong>جهة الإصدار:</strong> اقتصادية دبي</p>
+        </div>
+        <div class="f-col">
+            <h4>التواصل والعنوان</h4>
+            <p>دبي، البرشا جنوب 4</p>
+            <p>مبنى بزنس سنتر بي، مكتب B102</p>
+            <p>الإمارات العربية المتحدة</p>
+        </div>
+        <div class="f-col">
+            <h4>السياسات القانونية</h4>
+            <a href="privacy.html">سياسة الخصوصية</a>
+            <a href="terms.html">شروط الخدمة</a>
+            <a href="disclaimer.html">إخلاء المسؤولية</a>
+        </div>
+    </div>
+    <div class="f-bottom">
+        <p>&copy; 2026 جميع الحقوق محفوظة لبوابة مينت لخدمات الدفع الالكتروني ذ.م.م.</p>
+    </div>
+</footer>
+
+</body>
+</html>
